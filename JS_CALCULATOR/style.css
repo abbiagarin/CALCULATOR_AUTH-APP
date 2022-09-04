@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.heading {
+  text-align: center;
+  color: #fff;
+}
+
+.calculator {
+  max-width: 90%;
+  width: 30rem;
+  margin: 4rem auto;
+}
+
+.display {
+  text-align: end;
+  color: #fff;
+  overflow: hidden;
+  border: 1px solid #c70039;
+}
+
+.output {
+  font-size: 1.8rem;
+  padding: 25px;
+}
+
+.result {
+  font-size: 1.2rem;
+  padding: 25px;
+}
+
+.buttons {
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+}
+
+button:hover {
+  background-color: #000;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+button {
+  border: 0.5px solid #ccc;
+  line-height: 6.5rem;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+#clear_key {
+  grid-column: 1 / span 2;
+}
+
+#equal_key {
+  grid-column: 3 / span 2;
+}
+
+@keyframes big {
+  0% {
+    font-size: 1.2rem;
+  }
+  100% {
+    font-size: 2rem;
+  }
+}
+
+@keyframes small {
+  0% {
+    font-size: 1.8rem;
+  }
+  100% {
+    font-size: 1.2rem;
+  }
+}

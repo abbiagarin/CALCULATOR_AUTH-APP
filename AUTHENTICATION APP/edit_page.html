@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./edit_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/fea0f48c3c.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>EDIT PAGE</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav_container">
+                <div class="left_nav_menu">
+                    <img src="./img/icon-black.svg" alt="devchallenge-logo" class="nav_logo">
+                </div>
+
+                <div class="right_nav_menu">
+                    <ul class="profile">
+                        <li class="nav_link"><img src="./img/profile_pics.jpeg" alt="profile_pics" class="profile_img">
+                        </li>
+                        <li class="nav_link">
+                            <h4>Abigail Agarin</h4>
+                        </li>
+                        <li class="nav_link"><i id="menu-btn" class="fa fa-caret-down rotate"></i></li>
+                    </ul>
+                    <div class="drop_down_menu hidden">
+                        <ul>
+                            <li><a href="#"><i class="fa fa-user-circle"></i> My Profile</a> </li>
+                            <li><a href="#"><i class="fa fa-users"></i> Group chat</a></li>
+                            <li><a id="logout_sign" href="#"><i class="fa fa-sign-out"></i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="section">
+            <div class="section_heading">
+                <a href="./register.html">
+                    <i class="fa fa-angle-left"></i>
+                    Back</a>
+            </div>
+
+            <div class="profile_container">
+                <div class="profile_heading">
+                    <h2>Change Info</h2>
+                    <p>Changes will be reflected to every services</p>
+                    <img src="./img/profile_pics.jpeg" alt="" class="profile_pics_detail">
+                    <button class="change_photo_button">CHANGE PHOTO</button>
+                </div>
+
+                <form action="#" id="account-form">
+                    <div class="form-content">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name.." />
+                        <i id="icon" class="fa fa-check-circle"></i>
+                        <i id="icon" class="fa fa-exclamation-circle"></i>
+                        <p>Error message</p>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="bio">Bio</label>
+                        <input type="text" name="bio" id="bio" placeholder="Enter your bio.." />
+                        <i id="icon" class="fa fa-check-circle"></i>
+                        <i id="icon" class="fa fa-exclamation-circle"></i>
+                        <p>Error message</p>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" placeholder="012-345-6789" />
+                        <i id="icon" class="fa fa-check-circle"></i>
+                        <i id="icon" class="fa fa-exclamation-circle"></i>
+                        <p>Error message</p>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="email">Email</label>
+                        <input name="email" id="email" placeholder="Enter your email.." />
+                        <i id="icon" class="fa fa-check-circle"></i>
+                        <i id="icon" class="fa fa-exclamation-circle"></i>
+                        <p>Error message</p>
+                    </div>
+
+                    <div class="form-content">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your new password.." />
+                        <i id="icon" class="fa fa-check-circle"></i>
+                        <i id="icon" class="fa fa-exclamation-circle"></i>
+                        <p>Error message</p>
+                    </div>
+
+                    <button type="submit" class="submit-reg-btn">
+                        Save
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="footer_left">created by yours truly <a class="username" href="#">Abigail</a></p>
+        <p class="footer_right">devChallenges.io</p>
+    </footer>
+</body>
+<script src="./edit_page.js"></script>
+
+</html>
